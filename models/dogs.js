@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
 const DogSchema = new Schema({
     name: String,
@@ -7,6 +7,6 @@ const DogSchema = new Schema({
     age: Number
 });
 
-const DogModel = mongoose.model('dogs', DogSchema);
+const Dog = mongoose.model('dog', DogSchema)
 
-module.exports = DogModel;
+module.exports = Dog
